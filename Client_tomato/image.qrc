@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/ login_s.png</file>
+        <file>image/BG1.png</file>
+        <file>image/BG2.png</file>
+        <file>image/bg_big.png</file>
+        <file>image/DOMADO.png</file>
+        <file>image/DOMADO1.png</file>
+        <file>image/DOMADO2.png</file>
+        <file>image/DOMADO3.png</file>
+        <file>image/DOMADO4.png</file>
+    </qresource>
+</RCC>
