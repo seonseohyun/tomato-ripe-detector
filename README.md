@@ -1,7 +1,7 @@
 🍅 Tomato Smartfarm System 🍅
 
 **팀원:** 김대업, 오장관, 박은비, 선서현  
-**프로젝트:** 토마토 스마트팜 농장주들을 위한 성숙도 예측 프로그램
+**프로젝트:** 토마토 스마트팜 농장의 성숙도 파악 및 예측 프로그램  
 **진행 기간:** 2024년 6월 24일 ~ 7월 7일
 
 ---
@@ -67,22 +67,30 @@
 ---
 
 ## 📂 프로젝트 폴더 구조
-
+```
 tomato-ripe-detector/
-├─ Cam/ 카메라 클라이언트 (Qt)
-├─ client_tomato/ 관리자 클라이언트 (Qt)
-├─ client_python.py AI 분석 클라이언트 (Python)
-├─ server_main.cpp TCP 서버 (C++)
-├─ output/ Mask R-CNN 모델 파일 폴더
-├─ model_train/ CNN 학습 스크립트
-├─ README.md
+ ├─ Cam/                 # 카메라 클라이언트 (Qt, 선서현)
+ ├─ Client_tomato/       # 관리자 클라이언트 (Qt, 선서현)
+ ├─ client_python.py     # AI 분석 클라이언트 (Python, 오장관)
+ ├─ server_main.cpp      # TCP 서버 (C++, 박은비)
+ ├─ docs/                # ERD, Wireframe, Flowchart, Demo Video 스크린샷
+ │   ├─ Demo Video
+ │   ├─ ERD
+ │   ├─ Flowchart
+ │   ├─ Wireframe
+ ├─ model_train/         # CNN 학습 스크립트
+ │   ├─ cnn_model_save_keras.py (Python, 김대업)
+ │   ├─ cnn_model_save_torch.py (Python, 김대업)
+ ├─ README.md
 
+├─ README.md
+```
 - **Cam/**: 현장 카메라 프로그램, Qt로 제작
 - **client_tomato/**: 관리자용 클라이언트, Qt로 제작
 - **client_python.py**: Detectron2 + Keras AI 분석기
 - **server_main.cpp**: TCP 서버 코드
 
-## 📂 model_train/
+### 📂 model_train/
 - `cnn_model_save_keras.py`: Keras CNN 성숙도 분류 모델 학습 스크립트
 - `cnn_model_save_torch.py`: PyTorch 버전 CNN 성숙도 분류 모델 학습 스크립트
 - 학습 데이터는 `./tomato_data` 폴더 구조를 사용 (train/val)
