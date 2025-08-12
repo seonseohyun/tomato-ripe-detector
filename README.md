@@ -3,7 +3,7 @@
 <br>
 </div>
 
-**팀원:** 김대업, 오장관, 박은비, 선서현  
+**팀원:** 선서현 외 3인
 **프로젝트:** 토마토 스마트팜 농장의 성숙도 파악 및 예측 프로그램  
 **진행 기간:** 2025년 6월 24일 ~ 7월 7일
 
@@ -74,7 +74,7 @@
 tomato-ripe-detector/
  ├─ Cam/                 # 카메라 클라이언트 (Qt, 선서현)
  ├─ Client_tomato/       # 관리자 클라이언트 (Qt, 선서현)
- ├─ client_python.py     # AI 분석 클라이언트 (Python, 오장관)
+ ├─ client_python.py     # AI 분석 클라이언트 (Python)
  ├─ server_main.cpp      # TCP 서버 (C++, 박은비)
  ├─ docs/                # ERD, Wireframe, Flowchart, Demo Video 스크린샷
  │   ├─ Demo Video
@@ -82,8 +82,8 @@ tomato-ripe-detector/
  │   ├─ Flowchart
  │   ├─ Wireframe
  ├─ model_train/         # CNN 학습 스크립트
- │   ├─ cnn_model_save_keras.py (Python, 김대업)
- │   ├─ cnn_model_save_torch.py (Python, 김대업)
+ │   ├─ cnn_model_save_keras.py (Python)
+ │   ├─ cnn_model_save_torch.py (Python)
  ├─ README.md
 
 ├─ README.md
